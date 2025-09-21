@@ -948,21 +948,3 @@ body {
   margin: 0 auto 10px auto; /* centers the image */
   max-width: 60px; /* optional: keep icons small */
 }
-.navbar {
-  display: flex;
-  justify-content: space-between; /* pushes left and right apart */
-  align-items: center;            /* vertically centers */
-  padding: 10px 20px;
-  background-color: #222;         /* dark background like yours */
-  color: white;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.hamburger {
-  font-size: 24px;
-  cursor: pointer;
-}
