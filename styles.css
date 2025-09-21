@@ -938,3 +938,13 @@ body {
     text-align: center;
   }
 }
+.center-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.center-section img {
+  display: block;
+  margin: 0 auto 10px auto; /* centers the image */
+  max-width: 60px; /* optional: keep icons small */
+}
