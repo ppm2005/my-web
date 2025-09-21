@@ -7,20 +7,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-  <nav class="navbar">
-    <div class="logo">PPM</div>
-    <button class="menu-toggle">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-    </ul>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PPM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
 
   <!-- Hero -->
@@ -89,7 +94,8 @@
     <p><img src="location.jpg" alt="Location Icon" class="footer-icon"> IISER Kolkata, Mohanpur, West Bengal, India</p>
   </div>
 </footer>
-  <script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
