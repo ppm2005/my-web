@@ -13,47 +13,62 @@ body {
 }
 
 /* Navbar */
-header {
-  background: #222;
-  color: #fff;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
 .navbar {
-  width: 90%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 20px;
+  background: #222;
+  color: #fff;
+  position: relative;
 }
 
-.navbar .logo {
-  font-size: 1.4em;
+.logo {
   font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  color: white;
+.nav-links li a {
+  color: #fff;
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 5px;
-  transition: background 0.3s;
 }
 
-.nav-links a:hover {
-  background: #007bff;
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;   /* below navbar */
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show on toggle */
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
 }
 
 /* Sections */
@@ -638,4 +653,70 @@ footer {
 .footer-icon {
   width: 18px;
   height: 18px;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #007BFF;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About */
+.section {
+  padding: 30px 20px;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Research Interests */
+.research-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.research-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.research-list img {
+  width: 40px;
+  height: 40px;
 }
